@@ -1,0 +1,125 @@
+#include <stdio.h>
+#include <string.h>
+
+struct Item
+{
+
+    char number;
+    char name[151];
+    float gpa;
+    float price;
+};
+
+int main() {
+    struct Item item1 = {1, "Rubber Mallet", 4, 4.88};
+    struct Item item2 = {2, "Allen key set", 20, 6.95};
+    struct Item item3 = {3, "Socket spanner set", 10, 21.99};
+    struct Item item4 = {4, "Universal plies", 12, 5.63};
+    struct Item item5 = {5, "Pocket digital multimeter", 7, 18.3};
+    struct Item item6 = {6, "Carpenter's hammer with fibreglass handle", 50, 4.88};
+    struct Item item7 = {7, "Combination spanner set", 10, 11.99};
+    struct Item item8 = {8, "Adjustable spanner with screw", 12, 5.54};
+    struct Item item9 = {9, "Precision screwdriver set", 15, 18.46};
+    struct Item item10 = {10, "Stripping pliers ", 3, 5.99};
+    struct Item item11 = {11, "Multifunction digital multimeter", 12, 32};
+
+    struct Item items[] = {item1, item2, item3, item4, item5, item6, item7, item8, item9, item10, item11};
+
+    for (int i = 0; i < sizeof(items) / sizeof(items[0]); i++) {
+        printf("%2d\t", items[i].number);
+        printf("%1.2f\t", items[i].price);
+        printf("%-15s\t", items[i].name);
+        printf("%-15g\n", items[i].gpa);
+    }
+    struct AddItemToTheDeliveryNote {
+        char item[151];
+        float Price;
+        int Number;
+    };
+
+    void main()
+    {
+        struct AddItemToTheDeliveryNote item1;
+        printf("Object: \n");
+
+        scanf("%s", &item1.object);
+
+        printf("Price \n");
+
+        scanf("%f", &item1.price);
+
+        printf("Number of items \n");
+
+        scanf("%d", &item1.numberOfObjects);
+
+        printf("%s %.2f %d", item1.Object, item1.price, item1.numberOfObjects);
+    }
+
+    {
+        struct AddObjectToTheDeliveryNote item2;
+        printf("Object: \n");
+
+        scanf("%s", &item2.object);
+
+        printf("Price \n");
+
+        scanf("%f", &item2.price);
+
+        printf("Number of items \n");
+
+        scanf("%d", &item2.numberOfObjects);
+
+        printf("%s %.2f %d", item2.Object, item2.price, item2.numberOfObjects);
+    }
+
+    {
+        struct AddObjectToTheDeliveryNote item3;
+        printf("Object: \n");
+
+        scanf("%s", &item3.object);
+
+        printf("Price \n");
+
+        scanf("%f", &item3.price);
+
+        printf("Number of items \n");
+
+        scanf("%d", &item3.numberOfObjects);
+
+        printf("%s %.2f %d", item3.Object, item3.price, item3.numberOfObjects);
+    }
+
+
+    {
+        struct AddObjectToTheDeliveryNote item4;
+        printf("Object: \n");
+
+        scanf("%s", &item4.object);
+
+        printf("Price \n");
+
+        scanf("%f", &item4.price);
+
+        printf("Number of items \n");
+
+        scanf("%d", &item4.numberOfObjects);
+
+        printf("%s %.2f %d", item4.Object, item4.price, item4.numberOfObjects);
+    }
+
+    {   struct AddObjectToTheDeliveryNote item5;
+        printf("Object: \n");
+
+        scanf("%s", &item5.object);
+
+        printf("Price \n");
+
+        scanf("%f", &item5.price);
+
+        printf("Number of items \n");
+
+        scanf("%d", &item5.numberOfObjects);
+
+        printf("%s %.2f %d", item5.Object, item5.price, item5.numberOfObjects);
+    }
+};
